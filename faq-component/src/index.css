@@ -1,0 +1,53 @@
+body {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #e4e4e4;
+}
+
+h2 {
+  padding: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 38px;
+}
+
+.accordion {
+  display: grid;
+  justify-content: center;
+}
+
+.accordion_header {
+  align-items: center;
+  margin: 12px auto 12px auto;
+  border: none;
+  padding: 12px;
+  width: 320px;
+  border-radius: 3%;
+  background-color: #6c6c6c;
+  color: #fff;
+}
+
+.accordion_header[aria-expanded="true"] {
+  background-color: rgb(26, 22, 22);
+  color: #fff;
+}
+
+@keyframes fadeOutDownBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+.active {
+  width: 50%;
+  margin: 0 auto;
+  padding: 16px;
+  opacity: 1;
+  animation: fadeOutDownBig 0.1s ease-in-out;
+}

@@ -1,0 +1,42 @@
+Accordion Logic
+
+
+Component 
+*faqlist component which will render all the faqs in the object
+
+*faq component which will render just one faq
+should have the question and the answer  
+
+*app component 
+
+
+states 
+active, setActive for the faq component to
+
+
+important notes for button and p tags
+
+using aria accessibility to associate the heaaders with the content 
+
+button - should have
+  aria-controls - set to the content
+  aria-expanded - true/false
+
+  p 
+  id - associated with the aria-controls 
+
+
+Logic for showing the questions
+
+use active state to toggle p tag 
+
+set active case to true for the first element using 
+
+setActive(id == 0)
+
+and base on that you display clicked button
+
+if active show p tag or return null 
+
+
+finally style the results and provide appropriate tags 
