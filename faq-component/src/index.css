@@ -26,6 +26,7 @@ h2 {
   border-radius: 3%;
   background-color: #6c6c6c;
   color: #fff;
+  cursor: pointer;
 }
 
 .accordion_header[aria-expanded="true"] {
